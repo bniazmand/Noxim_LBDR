@@ -10,4 +10,5 @@ Authors:
 ---------
 License:  GNU GENERAL PUBLIC LICENSE Version 3
 
->Copyright (C) 2015-2016 as collective work done by Behrad Niazmand, Siavoosh Payandeh Azad
+---------
+>Copyright (C) 2015-2016 as collective work done by Behrad Niazmand and Siavoosh Payandeh Azad
