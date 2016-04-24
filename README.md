@@ -3,8 +3,9 @@ A version of Noxim supporting 2D turn models implemented using LBDR mechanism
 
 ---------
 Authors:
-      Behrad Niazmand
-      Siavoosh Payandeh Azad
+
+* Behrad Niazmand
+* Siavoosh Payandeh Azad
 
 ---------
 License:  GNU GENERAL PUBLIC LICENSE Version 3
