@@ -12,7 +12,7 @@ counter=0
     while read variable  
     do  
        echo $variable > all_2d_turn_model_LBDR_bits.txt
-       ./noxim_explorer_new sim.cfg
+       ./noxim_explorer sim.cfg
 
        if [ $counter -ge 10 ]; then
         cp routing_lbdr__sel_random__topology_4x4__traffic_bitreversal__.m  ./Results/bitreversal/r_bitreversal_$counter.m
