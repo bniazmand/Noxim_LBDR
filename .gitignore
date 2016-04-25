@@ -1,3 +1,6 @@
 .DS_Store
-.txt
-.m
+*.txt
+*.m
+*.dot
+*.tmp
+scripts/Results
