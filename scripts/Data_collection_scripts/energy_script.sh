@@ -11,7 +11,7 @@ do
 if [[ $counter -lt 1 ]]
 then
 awk '{ print $1 }' $f > temp1.txt
-sed -n 8,16p temp1.txt > $ResultFile
+sed -n 8,77p temp1.txt > $ResultFile
 rm temp1.txt
 fi
 
@@ -22,7 +22,7 @@ else
 inputNo=$counter
 fi
 awk '{ print $5 }' $f > temp.txt
-sed -n 8,16p temp.txt > energy_result_$inputNo.dot
+sed -n 8,77p temp.txt > energy_result_$inputNo.dot
 rm temp.txt
 counter=`expr $counter + 1`
 done

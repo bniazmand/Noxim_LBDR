@@ -11,7 +11,7 @@ awk '{ print $2 }' $f > temp.txt
 if [[ $counter -lt 1 ]]
 then
 awk '{ print $1 }' $f > temp1.txt
-sed -n 8,16p temp1.txt > $ResultFile
+sed -n 8,77p temp1.txt > $ResultFile
 rm temp1.txt
 fi
 
@@ -21,7 +21,7 @@ inputNo="0${counter}"
 else
 inputNo=$counter
 fi
-sed -n 8,16p temp.txt > latency_result_$inputNo.dot
+sed -n 8,77p temp.txt > latency_result_$inputNo.dot
 rm temp.txt
 counter=`expr $counter + 1`
 done
