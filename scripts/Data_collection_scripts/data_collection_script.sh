@@ -27,7 +27,7 @@ done
 cp parser_Avg.py ../collected_results
 cd ../collected_results
 for i in *.txt ; do
-echo $i
+  python parser_Avg.py $i
 done
 
 
