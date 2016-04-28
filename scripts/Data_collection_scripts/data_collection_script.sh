@@ -23,3 +23,13 @@ for i in ../Results/* ; do
       echo -----------------
   fi
 done
+
+cp parser_Avg.py ../collected_results
+cd ../collected_results
+for i in *.txt ; do
+echo $i
+done
+
+
+
+
