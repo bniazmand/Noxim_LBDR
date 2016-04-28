@@ -22,11 +22,16 @@ while line != "":
     if 'pir' not in line:
         values = line.split()
         pir = values[0]
+
         if pir != old_pir:
             if not first_counter:
                 output_file.write(str(old_pir)+"\t")
                 for i in range(0, len(values_list)):
-                    output_file.write(str("{0:.2f}".format(values_list[i]/counter))+"\t")
+                    average = values_list[i]/counter
+                    if average < 0.01:
+                        output_file.write(str(average)+"\t")
+                    else:
+                        output_file.write(str("{0:.2f}".format(values_list[i]/counter))+"\t")
                 output_file.write("\n")
                 counter = 1
                 values_list = []
@@ -47,7 +52,11 @@ while line != "":
 
 output_file.write(str(old_pir)+"\t")
 for i in range(0, len(values_list)):
-    output_file.write(str("{0:.2f}".format(values_list[i]/counter))+"\t")
+    average = values_list[i]/counter
+    if average < 0.01:
+        output_file.write(str(average)+"\t")
+    else:
+        output_file.write(str("{0:.2f}".format(values_list[i]/counter))+"\t")
 output_file.write("\n")
 
 result_file.close()
